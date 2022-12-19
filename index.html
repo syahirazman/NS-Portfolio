@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Be Vietnam Pro' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <title>Syahirah's Portfolio</title>
+</head>
+<body>
+
+  <!-- home -->
+  <div id="home">
+    <!-- navigation bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#home">Home</a></li>
+      </ul>
+    </nav>
+    <!-- image + name -->
+    <div class="intro">
+        <div class="profile-image">
+          <img src="./image/profile-img.png">
+        </div>
+        <div class="summary">
+          <h2>Hi, I'm</h2>
+          <h1><span class="name"></span></h1>
+          <p>Hardworking and motivated undergraduate student who is willing to learn new things.
+              Familiar with C++, HTML, and CSS. Beginner to Python and JavaScript. Enjoys
+              problem-solving and is able to perform well in any situations.</p>
+        </div>
+    </div>
+    <!-- button to download resume -->
+    <div class="download-resume">
+      <a href="https://drive.google.com/drive/folders/1dtv7-m-GYFP3fWqvUhTy7_rh0ftZKe8f?usp=sharing" target="_blank">Download resume</a>
+    </div>
+    <!-- JavaScript for typing animation at name -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".name", {
+        strings: ["NUR SYAHIRAH BINTI NORAZMAN"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+      })
+    </script>
+  </div>
+  
+  <!-- about me -->
+  <div id="about">
+    <!-- education background -->
+    <div class="education container">
+      <div class="section-name">
+        <h2>About Me</h2>
+      </div>
+      <h3>Education Background</h3>
+      <div class="row">
+        <div class="column">
+          <h3>B.Comp.Sc. (Hons) Software Engineering</h3>
+          <h4>Universiti Sains Malaysia</h4>
+          <p>2020 - Expected to graduate in 2024</p>
+          <p>Major in Software Engineering, Minor in Mathematics</p>
+          <p>Related courses: Foundations of Software Engineering, 
+            Web Technologies and Engineering, Software Architecture and Design.</p>
+        </div>
+        <div class="column">
+          <h3>Foundation in Science</h3>
+          <h4>Kolej MARA Kulim</h4>
+          <p>2019 - 2020</p>
+          <p>Courses taken: Mathematics, Chemistry, Physics, Biology, and English.</p>
+        </div>
+      </div>
+    </div>
+    <!--skill and competencies-->
+    <div class="skill container">
+      <h3>Skills and Competencies</h3>
+      <div class="row">
+        <div class="column">
+          <ul>
+            <li>Web Development (HTML and CSS)</li>
+            <li>C++</li>
+            <li>Basic photo and video editing</li>
+            <li>Microsoft Word</li>
+            <li>Bilingual proficiency in Malay and English</li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul>
+            <li>Teamwork</li>
+            <li>Adaptability</li>
+            <li>Initiative</li>
+            <li>Problem-solving</li>
+            <li>Open-mindedness</li>
+            <li>Willingness to learn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- experiences -->
+    <div class="exp container">
+      <h3>Experiences</h3>
+      <div class="row">
+        <div class="column">
+          <h4>Trainer, Aimsity Sdn. Bhd.</h4>
+          <ul>
+            <li>Teaching HTML and CSS to students aged 10 - 17 years old</li>
+            <li>Collaborated with MDEC #mydigitalmaker for national-level Web Designing Bootcamp and Web Designing Competition</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Participant, Varsity Hackathon</h4>
+          <ul>
+            <li>Worked in a team of 4 and developed a mobile application prototype that focuses on providing mental health support</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Comittee member, e-SULAM projects</h4>
+          <ul>
+            <li>2020: Organized Autism Awareness Quiz</li>
+            <li>2021: Organized Talk on Life Skill Education: Financial Management for Student</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <h4>School Prefect</h4>
+          <ul>
+            <li>Held a position as Deputy Head Prefect</li>
+            <li>Organized many school events</li>
+            <li>Led a group of prefects to assist management of school events</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>School Magazine Editor</h4>
+          <ul>
+            <li>Held the editor position for 4 years</li>
+            <li>Exposed to basic photo editing for the first time</li>
+            <li>Encouraged teamwork when editing magazine</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--projects-->
+  <div id="projects">
+    <div class="project container">
+      <div class="section-name">
+        <h2>Projects that I've Done</h2>
+      </div>
+      <div class="row">
+        <a href="https://github.com/syahirazman/CPT111-Food-Ordering-System" target="_blank"><div class="column">
+          <h4>Food Ordering System</h4>
+          <ul>
+            <li>Applied basic C++ such as functions, file handling, and array, without OOP and sorting algorithms</li>
+            <li>This system involves two end users; Customer and Restaurant Manager</li>
+          </ul>
+        </div></a>
+        
+        <a href="https://github.com/syahirazman/CAT201-Gamelab" target="_blank"><div class="column">
+          <h4>Gamelab Desktop Application</h4>
+          <ul>
+            <li>The game process is developed with Java while the interface is developed using JavaFX using SceneBuilder</li>
+            <li>The application consists of 3 games; tic-tac-toe, brick breaker, and hangman.</li>
+          </ul>
+        </div></a>
+
+        <a href="https://github.com/syahirazman/CPT212-Sorter"target="_blank"><div class="column">
+          <h4>Sorting Algorithm</h4>
+          <ul>
+            <li>Developed with Java</li>
+            <li>Analyzed bubble sort, quick sort, insertion sort, and radix sort</li>
+          </ul>
+        </div></a>
+
+      </div>
+      
+      <div class="row">
+        <a href="https://github.com/syahirazman/Python-Math" target="_blank">
+          <div class="column">
+            <h4>Solving Mathematics using Python</h4>
+            <ul>
+              <li>The program consists of a set of matrices and graph solutions</li>
+              <li>Applied libraries math, numpy , and matplotlip for handling matrices as arrays and plotting graphs</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="https://github.com/syahirazman/Sample-Artist-Website" target="_blank">
+          <div class="column">
+            <h4>Sample Artist Website</h4>
+            <ul>
+              <li>Created a simple website of my favourite celebrities</li>
+              <li>Consists of multiple webpages showcasing their profiles, success, discographies and more</li>
+              <li>Used as a sample for teaching website to children aged 10-17 years old</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--contact-->
+  <div id="contact">
+    <div class="contact container">
+      <div class="section-name">
+        <h2>Contact</h2>
+      </div>
+      <p>Reach me at:</p>
+      <div class="icon">
+        <a href="mailto:syahirahnorazman@student.usm.my" class="fa fa-envelope" target="_blank"></a>
+        <a href="https://www.facebook.com/syahiranrzmn" class="fa fa-facebook-square" target="_blank"></a>
+        <a href="https://github.com/syahirazman" class="fa fa-github" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/nursyahirah-norazman/" class="fa fa-linkedin-square" target="_blank"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Coded with ♡ by Nur Syahirah.</p>
+  </div>
+
+
+
+</body>
+</html>
