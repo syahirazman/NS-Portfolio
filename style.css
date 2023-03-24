@@ -13,7 +13,7 @@
 
 .navbar {
     position: fixed;
-    width: 100%;
+    width: 100vw;
 }
 
 .navbar ul {
@@ -67,10 +67,18 @@
 }
 
 .profile-image img {
-    width: auto;
     height: auto;
-    max-width: 300px;
-    max-height: 300px;
+    width: 300px;
+    display: block;
+}
+
+@media screen and (max-width:500px) {
+    .profile-image img {
+        width: 150px;
+    }
+    .profile-image {
+        margin-bottom: 20px;
+    }
 }
 
 .summary h1, h2 {
@@ -96,6 +104,7 @@
     }
     .intro, .row {
       flex-direction: column;
+      justify-content: space-evenly;
     }
 }
 
