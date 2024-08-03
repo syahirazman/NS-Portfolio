@@ -12,16 +12,19 @@
 }
 
 .navbar {
+    top:0; 
     position: fixed;
     width: 100vw;
+    z-index: 150;
+    background-color: #342E37;
 }
 
 .navbar ul {
+    max-width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 10px 20px;
     overflow: hidden;
-    background-color: #342E37;
 }
   
 .navbar li {
@@ -40,98 +43,129 @@
 
 .navbar li a:hover{
     background-color: plum;
-    border-radius: 20px;
+    border-radius: 10px;
     color: black;
     padding: 10px 25px;
-    transition: 0.5s ease;
+    transition: 0.8s ease-in-out;
 }
 
 .intro {
-    max-width: 65%;
-    max-height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 150px;
+    max-width: 70vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
+    margin: 0;
     color:white;
+    gap: 30px;
+    transform: translateX(20%);
 }
 
 .profile-image {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 50px; 
 }
 
 .profile-image img {
     height: auto;
-    width: 300px;
+    width: 350px;
     display: block;
 }
 
-@media screen and (max-width:500px) {
-    .profile-image img {
-        width: 150px;
+@media screen and (max-width:900px) {
+    .intro {
+        height: 100vh;
     }
     .profile-image {
-        margin-bottom: 20px;
+        transform: translateY(15%);
+    }
+    .summary {
+        width: 80vw;
+    }
+    .summary h1, h2 {
+        font-size: 8px;
+        text-align: center;
+    }
+    .summary span {
+        font-size: 10px;
+    }
+    .summary p {
+        font-size: 5px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 .summary h1, h2 {
     padding-bottom: 20px;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .summary span {
-    font-size: 40px;
+    font-size: 45px;
     color: plum;
 }
 
 .summary p {
-    padding: 10px auto;
+    padding: 0px auto;
     text-align: justify;
-    font-size: 20px;
+    font-size: 23px;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
     #home {
         height: auto;
-        padding-bottom: 100px;
     }
     .intro, .row {
       flex-direction: column;
       justify-content: space-evenly;
+      gap: 0px;
     }
 }
 
 #about {
     background-color: #aea4bf;
+    padding: 100px 0;
 }
 
 #projects {
     background-color: #e3e4db;
+    padding: 100px 0;
 }
 
 .container {
-    width: 70%;
+    height: auto;
+    width: 75%;
     margin: 0 auto;
-    padding: 70px 0;
     color: black;
 }
 
-.section-name, .container > h3 {
+.section-name > h1 {
     text-align: center;
-    padding: 20px 0;
-    font-size: 25px;
+    font-size: 3.5rem;
+    margin-bottom: 45px;
+}
+
+.container > h2 {
+    padding: 10px 25px;
+    background-color: plum;
+    font-style: oblique;
+    margin: 20px 0;
 }
 
 .row {
-    display: flex;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
 }
 
 .row a {
@@ -140,28 +174,42 @@
 }
 
 .column {
-    flex: 1;
+    align-self: start;
+    width: 50%;
     padding: 30px;
-    margin: 0 20px;
+    margin: 0px 12px;
     border: 0.5px solid black;
     border-radius: 20px;
     line-height: 25px;
-    box-shadow: 10px 20px #342E37;
+    box-shadow: 5px 10px #342E37;
     background-color: white;
 }
 
 .column:hover {
     cursor: pointer;
-    box-shadow: 20px 30px #342E37;
+    box-shadow: 10px 15px #342E37;
     transition: 0.5s ease;
 }
 
-.exp .row, .project .row {
-    margin-bottom: 45px;
+.column .gradyear {
+    font-size: 15px; 
+    font-style: italic;
+    margin-bottom: 7px;
+}
+
+#projects a:link, a:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+#projects a:hover {
+    color: plum;
+    text-decoration: underline;
 }
 
 #contact {
     background-color: black;
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -187,7 +235,7 @@
     background-color: #342E37;
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 20px 0;
 }
 
 .footer p {

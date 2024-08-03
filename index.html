@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Be Vietnam Pro' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Be Vietnam Pro" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <title>Syahirah's Portfolio</title>
@@ -24,21 +25,21 @@
     <!-- image + name -->
     <div class="intro">
         <div class="profile-image">
-          <img src="./image/profile-img.png">
+          <img src="./image/profile-img.png" alt="Profile image of Nur Syahirah Norazman">
         </div>
         <div class="summary">
-          <h2>Hi, I'm</h2>
+          <h2>Hello, I'm</h2>
           <h1><span class="name"></span></h1>
-          <p>Hardworking and motivated undergraduate student who is willing to learn new things.
-              Familiar with C++, HTML, and CSS. Beginner to Python and JavaScript. Enjoys
-              problem-solving and is able to perform well in any situations.</p>
+          <p>Motivated Computer Science fresh graduate from Universiti Sains Malaysia, Penang. Certified in Microsoft Power Platform Fundamentals.
+            Possesses a diverse skill set that includes web development, Android development, PowerBI development and proficiency in languages like C++, Java, Python, SQL, and DAX.
+            Enjoys problem-solving, exploring new knowledge, coffee, and cats.</p>
         </div>
     </div>
     <!-- JavaScript for typing animation at name -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typed = new Typed(".name", {
-        strings: ["NUR SYAHIRAH BINTI NORAZMAN"],
+        strings: ["NUR SYAHIRAH NORAZMAN"],
         typeSpeed: 150,
         backSpeed: 150,
         loop: true
@@ -51,153 +52,183 @@
     <!-- education background -->
     <div class="education container">
       <div class="section-name">
-        <h2>About Me</h2>
+        <h1>About Me</h1>
       </div>
-      <h3>Education Background</h3>
+      <h2>Academic Background</h2>
       <div class="row">
         <div class="column">
           <h3>B.Comp.Sc. (Hons) Software Engineering</h3>
-          <h4>Universiti Sains Malaysia</h4>
-          <p>2020 - Expected to graduate in 2024</p>
+          <h4>Universiti Sains Malaysia, Penang</h4>
+          <p class="gradyear">2020 - Expected to graduate in 2024</p>
+          <p>Current CGPA: 3.38</p>
           <p>Major in Software Engineering, Minor in Mathematics</p>
-          <p>Related courses: Foundations of Software Engineering, 
-            Web Technologies and Engineering, Software Architecture and Design.</p>
+          <p>Related courses: Foundations of Software Engineering, Software Architecture and Design, and Software Testing</p>
         </div>
         <div class="column">
-          <h3>Foundation in Science</h3>
-          <h4>Kolej MARA Kulim</h4>
-          <p>2019 - 2020</p>
-          <p>Courses taken: Mathematics, Chemistry, Physics, Biology, and English.</p>
+          <h3>Foundation in Science (Pre-U USM Program)</h3>
+          <h4>Kolej MARA Kulim, Kedah</h4>
+          <p class="gradyear">2019 - 2020</p>
+          <p>Final CGPA 4.00</p>
+          <p>Courses taken: Mathematics, Chemistry, Physics, Biology, English for MUET, and English for IELTS</p>
         </div>
       </div>
     </div>
     <!--skill and competencies-->
     <div class="skill container">
-      <h3>Skills and Competencies</h3>
+      <h2>Skills and Competencies</h2>
       <div class="row">
         <div class="column">
+          <h3 style="text-align: center; margin-bottom: 10px;">Technical</h3>
           <ul>
-            <li>Web Development (HTML and CSS)</li>
-            <li>C++</li>
-            <li>Basic photo and video editing</li>
-            <li>Microsoft Word</li>
-            <li>Bilingual proficiency in Malay and English</li>
+            <li>C++, Java, Python (Intermediate)</li>
+            <li>Web Development: HTML, CSS, PHP, BootStrap (Intermediate)</li>
+            <li>Database Management: MySQL (Intermediate)</li>
+            <li>Data Visualization: Microsoft PowerPoint/Excel (Intermediate), Microsoft PowerBl, DAX (Basic)</li>
+            <li>Cloud Services: Kubernetes, Docker (Basic)</li>
           </ul>
         </div>
         <div class="column">
+          <h3 style="text-align: center; margin-bottom: 10px;">Tools</h3>
           <ul>
-            <li>Teamwork</li>
-            <li>Adaptability</li>
-            <li>Initiative</li>
-            <li>Problem-solving</li>
-            <li>Open-mindedness</li>
-            <li>Willingness to learn</li>
+            <li>Visual Studio Code</li>
+            <li>IntelliJ IDEA</li>
+            <li>Atom</li>
+            <li>Android Studio</li>
+            <li>Google Colab</li>
+            <li>XAMPP</li>
+            <li>Git & GitHub</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3 style="text-align: center; margin-bottom: 10px;">Others</h3>
+          <ul>
+            <li>Advanced Mathematics: Statistics, Algebra, Calculus (Intermediate)</li>
+            <li>Languages: English (Fluent), Malay (Native)</li>
+            <li>Certification: Microsoft Certified: Power Platform Fundamentals (May 2024)</li>
+            <li>Video editing (Basic)</li>
           </ul>
         </div>
       </div>
     </div>
     <!-- experiences -->
     <div class="exp container">
-      <h3>Experiences</h3>
+      <h2>Experiences</h2>
       <div class="row">
         <div class="column">
-          <h4>Trainer, Aimsity Sdn. Bhd.</h4>
+          <h3>IT Intern, PETRONAS</h3>
           <ul>
-            <li>Teaching HTML and CSS to students aged 10 - 17 years old</li>
-            <li>Collaborated with MDEC #mydigitalmaker for national-level Web Designing Bootcamp and Web Designing Competition</li>
+            <li>Developed 2 PowerBl dashboards resulting in data visualization efficiency for Group Tax, PETRONAS.</li>
+            <li>Assisted in the maintenance of PowerBl Staff Training Dashboard, utilized by Group Tax employees to track their tax training progress.</li>
+          </ul>
+
+        </div>
+        <div class="column">
+          <h3>Trainer, Aimsity Sdn. Bhd.</h3>
+          <ul>
+            <li>Taught HTML and CSS fundamentals to students aged 10 - 15, aimed to develop understanding of basic web design.</li>
+            <li>Collaborated with MDEC for national-level Web Designing Bootcamp and Web Designing Competition.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h3>Participant, Varsity Hackathon</h3>
+          <ul>
+            <li>Worked in a team of 3 to design and develope a mobile application prototype that focuses on providing mental health support.</li>
           </ul>
         </div>
         <div class="column">
-          <h4>Participant, Varsity Hackathon</h4>
-          <ul>
-            <li>Worked in a team of 4 and developed a mobile application prototype that focuses on providing mental health support</li>
-          </ul>
-        </div>
-        <div class="column">
-          <h4>Comittee member, e-SULAM projects</h4>
+          <h3>Committee member, e-SULAM projects</h3>
           <ul>
             <li>2020: Organized Autism Awareness Quiz</li>
             <li>2021: Organized Talk on Life Skill Education: Financial Management for Student</li>
           </ul>
         </div>
       </div>
-
-      <div class="row">
-        <div class="column">
-          <h4>School Prefect</h4>
-          <ul>
-            <li>Held a position as Deputy Head Prefect</li>
-            <li>Organized many school events</li>
-            <li>Led a group of prefects to assist management of school events</li>
-          </ul>
-        </div>
-        <div class="column">
-          <h4>School Magazine Editor</h4>
-          <ul>
-            <li>Held the editor position for 4 years</li>
-            <li>Exposed to basic photo editing for the first time</li>
-            <li>Encouraged teamwork when editing magazine</li>
-          </ul>
-        </div>
       </div>
-    </div>
   </div>
 
   <!--projects-->
   <div id="projects">
     <div class="project container">
       <div class="section-name">
-        <h2>Projects that I've Done</h2>
+        <h1>My Top Projects</h1>
       </div>
       <div class="row">
-        <a href="https://github.com/syahirazman/CPT111-Food-Ordering-System" target="_blank"><div class="column">
-          <h4>Food Ordering System</h4>
+        <div class="column">
+          <h3>UniSched USM web application</h3>
+          <p style="font-style: italic;">Final Year Project, Silver award winner of PIXEL 2024<p>
           <ul>
-            <li>Applied basic C++ such as functions, file handling, and array, without OOP and sorting algorithms</li>
-            <li>This system involves two end users; Customer and Restaurant Manager</li>
+            <li>Provides a tool for USM students to manage their semester timetables efficiently.</li>
+            <li>Developed using HTML, CSS, PHP, JavaScript, and BootStrap. Database management is handled using MySQL.</li>
           </ul>
-        </div></a>
+          <br>
+          <a href="https://youtu.be/Y4AKSUgokg0" target="_blank">See more details <i class="fa fa-external-link" style="padding-left: 3px;"></i></a>
+        </div>
+        <div class="column">
+          <h3>Mari Bertutur! mobile application</h3>
+          <p style="font-style: italic;">Group project in Year 3</p>
+          <ul>
+            <li>An Android application that helps children and non-Malay speakers improve speaking abilities in Malay language.</li>
+            <li>Developed using Java language on Android Studio. Database management is handled using Firebase.</li>
+          </ul>
+          <br>
+          <a href="https://github.com/syahirazman/MariBertutur" target="_blank">See more details <i class="fa fa-external-link" style="padding-left: 3px;"></i></a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="column">
+          <h3>Food Ordering System</h3>
+          <p style="font-style: italic;">Individual assignment in Year 1</p>
+          <ul>
+            <li>This system involves two end users; Customer and Restaurant Manager with different functionalities.</li>
+            <li>Developed using C++ with only the fundamental principles such as input validation, function, file handling, and array without
+              implementing any data structures or algorithms.
+            </li>
+          </ul>
+          <br>
+          <a href="" target="_blank">See more details <i class="fa fa-external-link" style="padding-left: 3px;"></i></a>
+        </div>
         
-        <a href="https://github.com/syahirazman/CAT201-Gamelab" target="_blank"><div class="column">
-          <h4>Gamelab Desktop Application</h4>
+        <div class="column">
+          <h3>Gamelab Desktop Application</h3>
+          <p style="font-style: italic;">Group project in Year 2</p>
           <ul>
-            <li>The game process is developed with Java while the interface is developed using JavaFX using SceneBuilder</li>
-            <li>The application consists of 3 games; tic-tac-toe, brick breaker, and hangman.</li>
+            <li>Consists of 3 classic desktop games: tic-tac-toe, brick breaker, and hangman</li>
+            <li>The games are implemented with Java while the GUI is developed with JavaFX using SceneBuilder software.</li>
           </ul>
-        </div></a>
-
-        <a href="https://github.com/syahirazman/CPT212-Sorter"target="_blank"><div class="column">
-          <h4>Sorting Algorithm</h4>
-          <ul>
-            <li>Developed with Java</li>
-            <li>Analyzed bubble sort, quick sort, insertion sort, and radix sort</li>
-          </ul>
-        </div></a>
-
+          <br>
+          <a href="" target="_blank">See more details <i class="fa fa-external-link" style="padding-left: 3px;"></i></a>
+        </div>
       </div>
       
       <div class="row">
-        <a href="https://github.com/syahirazman/Python-Math" target="_blank">
           <div class="column">
-            <h4>Solving Mathematics using Python</h4>
+            <h3>EasyConvert website</h3>
+            <p style="font-style: italic;">Group assignment in Year 2</p>
             <ul>
-              <li>The program consists of a set of matrices and graph solutions</li>
-              <li>Applied libraries math, numpy , and matplotlip for handling matrices as arrays and plotting graphs</li>
+              <li>Simple web application that allows user to convert PDF files to TXT files.</li>
+              <li>Used HTML and CSS for front-end development, Java Apache PDFBox for the conversion process, and Docker for deployment.</li>
             </ul>
+            <br>
+            <a href="https://github.com/syahirazman/CAT201-EasyConvert" target="_blank">See more details <i class="fa fa-external-link" style="padding-left: 3px;"></i></a>
           </div>
-        </a>
-
-        <a href="https://github.com/syahirazman/Sample-Artist-Website" target="_blank">
+  
           <div class="column">
-            <h4>Sample Artist Website</h4>
+            <h3>WhatsApp: Enhanced real-time features</h3>
+            <p style="font-style: italic;">Group assignment in Year 4</p>
             <ul>
-              <li>Created a simple website of my favourite celebrities</li>
-              <li>Consists of multiple webpages showcasing their profiles, success, discographies and more</li>
-              <li>Used as a sample for teaching website to children aged 10-17 years old</li>
+              <li>Simple chat interface of WhatsApp Desktop to demonstrate two new features: offensive words detection and message scheduling.</li>
+              <li>Developed using HTML and CSS. Database management is handled using MySQL.</li>
             </ul>
+            <br>
+            <a href="https://youtu.be/8tUxTK0R0R8" target="_blank">See more details <i class="fa fa-external-link" style="padding-left: 3px;"></i></a>
           </div>
-        </a>
       </div>
+
     </div>
   </div>
 
@@ -205,21 +236,19 @@
   <div id="contact">
     <div class="contact container">
       <div class="section-name">
-        <h2>Contact</h2>
+        <h1>Contact Me</h1>
       </div>
-      <p>Reach me at:</p>
       <div class="icon">
-        <a href="mailto:syahirahnorazman@gmail.com" class="fa fa-envelope" target="_blank"></a>
-        <a href="https://www.facebook.com/syahiranrzmn" class="fa fa-facebook-square" target="_blank"></a>
+        <p style="margin-top: 60px;">Reach me at:</p>
+        <a href="mailto:nursyahirah.nrzmn@gmail.com" class="fa fa-envelope" target="_blank"></a>
         <a href="https://github.com/syahirazman" class="fa fa-github" target="_blank"></a>
         <a href="https://www.linkedin.com/in/nursyahirah-norazman/" class="fa fa-linkedin-square" target="_blank"></a>
-        <a href="https://drive.google.com/drive/folders/1dtv7-m-GYFP3fWqvUhTy7_rh0ftZKe8f?usp=sharing" class="fa fa-file-pdf-o" target="_blank"></a>
       </div>
     </div>
   </div>
 
   <div class="footer">
-    <p>Coded with ♡ by Nur Syahirah.</p>
+    <p>Coded with ♡ by Syahirah.</p>
   </div>
 
 
