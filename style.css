@@ -75,24 +75,28 @@
 }
 
 @media screen and (max-width:900px) {
-    .intro {
-        height: 100vh;
-    }
+
     .profile-image {
-        transform: translateY(15%);
+        margin-top: 100px;
+        transform: translateX(2%);
+    }
+
+    .profile-image img {
+        height: auto;
+        max-width: 100%;
     }
     .summary {
-        width: 80vw;
+        width: 85vw;
     }
     .summary h1, h2 {
-        font-size: 8px;
+        font-size: 4px;
         text-align: center;
     }
     .summary span {
-        font-size: 10px;
+        font-size: 7px;
     }
     .summary p {
-        font-size: 5px;
+        font-size: 4px;
     }
 
     .navbar {
@@ -122,6 +126,7 @@
 @media screen and (max-width: 900px) {
     #home {
         height: auto;
+        padding-bottom: 50px;
     }
     .intro, .row {
       flex-direction: column;
@@ -138,6 +143,23 @@
 #projects {
     background-color: #e3e4db;
     padding: 100px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 100vw;
+        height: auto;
+    }
+    .row {
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .column {
+        width: 100%;
+        text-wrap:balance;
+        flex-grow: 1;
+    }
 }
 
 .container {
@@ -163,6 +185,7 @@
 .row {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: 35px;
